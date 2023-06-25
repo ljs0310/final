@@ -16,22 +16,23 @@ body {
 }
 header {
   margin-top: 3rem;
+  height: 350px;
   border-bottom: 1px solid #d5d5d5;
+  display: block;
 }
 .hdiv {
-  width: 30rem;
+  width: 800px;
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .address {
   text-align: center;
-  display: flex;
-  align-items: center;
 }
 .address > input {
   width: 400px;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
   margin-right: 10px;
   text-indent: 16px;
@@ -43,13 +44,17 @@ header {
   background-color: white;
   border-radius: 10px;
 }
+#member {
+  width: 350px;
+  height: 150px;
+  margin-right: 0;
+  margin-top: 20px;
+}
 .login {
   float: right;
-  background-color: white;
   height: 80px;
   width: fit-content;
   text-align: center;
-  margin: 2rem 0 4rem 0;
   display: flex;
 }
 .login > a:hover {

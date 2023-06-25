@@ -27,7 +27,7 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
 	      <div>
 	        <div id="iddiv">
 	        <input class="login" id="id" name="id"placeholder="아이디">
-	        <button type="button" id="resetbtn">✖️</button>
+	        <button type="button" id="resetbtn" style="background-color: white;">✖️</button>
 	      </div>
 	      </div>
 	      <div>

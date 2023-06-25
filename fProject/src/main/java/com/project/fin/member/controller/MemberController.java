@@ -38,9 +38,21 @@ public class MemberController {
 		
 		return "redirect:/";
 	}
-	@GetMapping("memberInfo.me")
-	public void memberInfo() {}
+// My Page
+	@GetMapping("memberMyPage.me")
+	public void memberMyPage() {}
 	
+	@GetMapping("memberUpdate.me")
+	public void memberUpdate() {}
+	
+	@GetMapping("memberOrderHistory.me")
+	public void memberOrderHistory() {}
+	
+	@GetMapping("memberDelete.me")
+	public void memberDelete() {}
+	
+	@GetMapping("question.me")
+	public void question() {}
 	
 //	로그인 테스트용
 	@GetMapping("/memberlogin.me")

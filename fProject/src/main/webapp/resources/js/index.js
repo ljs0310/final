@@ -1,12 +1,11 @@
 $(function () {
-  const x = $(".slide");
-  const slideleft = -1000;
+  const x = $(".slide>div");
+  const slideleft = -1200;
+  const slideContainer = x;
 
   setInterval(function () {
-    x.animate({ left: slideleft }, function () {
-      const firstImage = x.find("img:first");
-      x.css("left", 0);
-      x.append(firstImage);
-    });
+    const firstImage = slideContainer.find("img:first");
+    slideContainer.css("left", slideleft);
+    slideContainer.append(firstImage);
   }, 3000);
 });

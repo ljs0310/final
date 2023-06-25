@@ -15,23 +15,26 @@ body {
   background-color: #f9f7e8;
 }
 
-
 /* 이미지 슬라이드 부분 */
 .slide {
-  display: flex;
   position: relative;
   overflow: hidden;
   height: 400px;
-  clear: both;
+  width: 1200px;
 }
-.slide > img {
+.slide > div {
   position: absolute;
-  width: 1300px;
-  max-width: 100%;
-  height: auto;
+  display: flex;
+  height: 100%;
+}
+.slide img {
+  width: 1200px;
+  height: 100%;
 }
 /* 카테고리 부분 */
 .container {
+  padding-top: 10px;
+  border-top: 1px solid #d5d5d5;
   margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
@@ -54,4 +57,3 @@ body {
 .category img:hover {
   transform: scale(1.3);
 }
-

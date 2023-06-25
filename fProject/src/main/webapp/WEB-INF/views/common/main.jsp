@@ -8,7 +8,7 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
   <head>
     <meta charset="UTF-8" />
     <title>Insert title here</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    <link rel="stylesheet" href="resources/css/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,11 +19,10 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
       rel="stylesheet"
       href="${pageContext.request.contextPath}/resources/css/main.css"
     />
-    <style></style>
   </head>
   <body>
-    <header>
-      <div class="hdiv">
+    <header >
+      <div class="hdiv" >
         <div>
           <a href="${pageContext.request.contextPath}"><img src="${pageContext.request.contextPath}/resources/img/logo2-removebg.png"/></a>
         </div>
@@ -32,41 +31,44 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
           <button>검색</button>
         </div>
       </div>
-   
-      <c:if test="${empty userName}">
-        <div class="login" id="login">
-          <a href="${pageContext.request.contextPath}/member/login.me"
-            >로그인</a
-          >
-          <span>|</span>
-          <a href="${pageContext.request.contextPath}/member/memberEnroll.me"
-            >회원가입</a
-          >
-        </div>
-      </c:if>
-      <c:if test="${not empty userName}">
-        <div class="login">
-          <ul id="user">
-            <span class="material-symbols-outlined custom-size" >
-            person
-            </span><br>
-            ${userName}님 접속완료
-            <li><a href="${pageContext.request.contextPath}/member/memberInfo.me">마이페이지</a></li>
-            <li>
-              <a
-                href="${pageContext.request.contextPath}/member/memberLogout.me"
-                >로그아웃</a
+      
+        <div id="member" >
+          <c:if test="${empty userName}">
+            <div class="login" id="login">
+              <a href="${pageContext.request.contextPath}/member/login.me"
+                >로그인</a
               >
-            </li>
-          </ul>
+              <span>|</span>
+              <a href="${pageContext.request.contextPath}/member/memberEnroll.me"
+                >회원가입</a
+              >
+            </div>
+          </c:if>
+          <c:if test="${not empty userName}">
+            <div class="login">
+              <ul id="user">
+              <a href="${pageContext.request.contextPath}/member/memberMyPage.me">
+                <span class="material-symbols-outlined custom-size" >
+                person
+                </span><br>
+                ${userName}님 접속완료
+                <li>마이페이지</a></li>
+                <li>
+                  <a
+                    href="${pageContext.request.contextPath}/member/memberLogout.me"
+                    >로그아웃</a
+                  >
+                </li>
+              </ul>
 
-          <ul id="user" >
-            <span class="material-symbols-outlined custom-size">
-              shopping_cart
-              </span><br>
-            장바구니
-          </ul>
-        </div>
-      </c:if>
-    </header>
+              <ul id="user" >
+                <span class="material-symbols-outlined custom-size"> shopping_cart </span>
+                <br>
+                장바구니
+              </ul>
+            </div>
+          </c:if>
+        </header>
+      </div>
+    </div>
    
