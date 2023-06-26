@@ -10,6 +10,7 @@ uri="http://java.sun.com/jsp/jstl/functions" %>
      2. 첫번째 div 속성값 width: 100%; display: flex; 주기
      3. 첫번째 div 안에 mypage.jsp include한곳 바로 밑에
      div 하나 생성 후 width: 800px; height: 500px; margin-top: 10%; 속성값 주면 본문내용
+    
 -->
 <div id="ediv">
   <jsp:include page="/WEB-INF/views/common/mypage.jsp" />
